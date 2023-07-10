@@ -1,0 +1,118 @@
+.container {
+    width: 800px;
+    height: 600px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-section {
+    width: 50%;
+    background-image: url('../../images/manager.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.registration-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+}
+
+.form-group label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+}
+
+.form-group input:focus,
+.form-group input:valid,
+.form-group select:focus,
+.form-group select:valid {
+    outline: none;
+    border-color: #555;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label,
+.form-group select:focus + label,
+.form-group select:valid + label {
+    top: -10px;
+    left: 0;
+    font-size: 12px;
+    color: #555;
+    background-color: #fff;
+    padding: 2px;
+}
+
+.container select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 20px;
+    background: url('https://cdn.jsdelivr.net/gh/stephentuso/welcome-screen/assets/arrow.png') no-repeat right center;
+    background-size: 16px;
+}
+
+.container select::-ms-expand {
+    display: none;
+}
+
+.container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4cc35b;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #68da23;
+}
+.container input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+.container input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}

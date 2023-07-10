@@ -1,0 +1,18 @@
+{
+  "1" : {
+    "id" : "1",
+    "customerId" : "2",
+    "companyId" : "3",
+    "comment" : "Great service",
+    "reviewScore" : 5.0,
+    "commentStatus" : "Accepted"
+  },
+  "2" : {
+    "id" : "2",
+    "customerId" : "1",
+    "companyId" : "3",
+    "comment" : "Super",
+    "reviewScore" : 4.0,
+    "commentStatus" : "Accepted"
+  }
+}

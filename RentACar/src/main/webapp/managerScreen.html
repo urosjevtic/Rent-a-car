@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ManagerScreen</title>
+  <link href="styles/profile_style.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/company_style.css" rel="stylesheet">
+  <link href="styles/company_info_style.css" rel="stylesheet">
+  <link href="styles/orders_style.css" rel="stylesheet">
+  <link href="styles/managerStyles/registerVehicles.css" rel="stylesheet">
+  <link href="styles/managerStyles/vehicles.css" rel="stylesheet">
+  <link href="styles/company_info_style.css" rel="stylesheet">
+  <link href="styles/managerStyles/managerComments.css" rel="stylesheet">
+  <link href="styles/managerStyles/reject_order_style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+  <link rel="icon"  href="images/favicon.ico">
+</head>
+<body>
+<nav id="navbar">
+  <ul>
+    <li><a href="#/">Home</a></li>
+
+    <li><a href="#/Profile">Profile</a></li>
+    <li><a href="#/Orders">Orders</a></li>
+    <li><a href="#/ManagerComments">Comments</a></li>
+    <li><a href="#/ManagerObject">My Object</a></li>
+    <div class="dropdown">
+      <button class="dropbtn">Vehicles
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#/Vehicles">Show all vehicles</a>
+        <a href="#/RegisterVehicle">Register new vehicle</a>
+      </div>
+    </div>
+    <li><a href="#/Logout">Logout</a></li>
+
+  </ul>
+</nav>
+<div id="main_container">
+  <router-view></router-view>
+</div>
+</body>
+<script src="js/axios.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/vue-router.js"></script>
+<script src="app/ManagerComponents/managerObject.js"></script>
+<script src="app/CompanyComponents/companyObjects.js"></script>
+<script src="app/profileComponent.js"></script>
+<script src="app/logoutComponent.js"></script>
+<script src="app/CompanyComponents/objectInfo.js"></script>
+<script src="app/allOrdersComponent.js"></script>
+<script src="app/ManagerComponents/vehicles.js"></script>
+<script src="app/ManagerComponents/registerVehicle.js"></script>
+<script src="app/ManagerComponents/managerComments.js"></script>
+<script src="app/ManagerComponents/allManagerOrdersComponent.js"></script>
+<script src="app/ManagerComponents/managerMain.js"></script>
+</html>

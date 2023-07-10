@@ -1,0 +1,109 @@
+.container-register-vehicle {
+    width: 800px;
+    height: 700px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.vehicle-image-section {
+    width: 50%;
+    background-image: url('../../images/toyota_supra_mk4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.register-vehicle-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vehicle-form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.vehicle-form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.vehicle-form-group input,
+.vehicle-form-group select {
+    width: 97%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+}
+
+.vehicle-form-group select{
+    width: 102%;
+}
+
+.vehicle-form-group label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+}
+
+.vehicle-form-group input:focus,
+.vehicle-form-group input:valid:not(:placeholder-shown),
+.vehicle-form-group select:focus,
+.vehicle-form-group select:valid {
+    outline: none;
+    border-color: #555;
+}
+
+.vehicle-form-group input:not([type='file']):not([type='checkbox']):focus + label,
+.vehicle-form-group input:not([type='file']):not([type='checkbox']):valid:not(:placeholder-shown) + label,
+.vehicle-form-group select:focus + label,
+.vehicle-form-group select:valid + label {
+    top: -10px;
+    left: 0;
+    font-size: 12px;
+    color: #555;
+    background-color: #fff;
+    padding: 2px;
+}
+
+.vehicle-form-group input[type='file']{
+    text-indent: 50px;
+}
+
+
+
+.container-register-vehicle input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4cc35b;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container-register-vehicle input[type="submit"]:hover {
+    background-color: #68da23;
+}
+
+.vehicle-form input[type="checkbox"]{
+    margin-top: 11px;
+}

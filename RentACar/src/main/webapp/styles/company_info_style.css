@@ -1,0 +1,286 @@
+.company-header{
+    width: fit-content;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    flex-direction: row;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    padding-left: 30px;
+}
+
+.company-info{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+
+.company-info #NameInfo{
+    font-family: Arial, sans-serif;
+    font-size: xxx-large;
+
+}
+
+.company-info #WrkHrsInfo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+.company-header img{
+    height:100%;
+    width:150px;
+    object-position:center;
+    object-fit:cover;
+}
+
+.company-section{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+
+.company-section #LocationInfo{
+    font-size:larger;
+    font-style:italic;
+    padding: 50px;
+
+}
+
+.company-section #mapObjLoc{
+    width:85%;
+    height:400px;
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+
+.content-collapsible {
+    padding: 0 18px;
+    background-color: #eee;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+.end {
+    height: 200px;
+}
+
+.vehicle-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.vehicle {
+    width: 80%;
+    height: 250px;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+}
+
+.vehicle img{
+    height:100%;
+    width:300px;
+    object-position:center;
+    object-fit:cover;
+}
+
+.vehicle-info{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    min-width: 30%;
+    border-right: 1px solid #ccc;
+    flex-shrink: 0;
+}
+
+.vehicle-info-name{
+    flex:1;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size:xx-large;
+    font-weight: bold;
+}
+
+.vehicle-info-price{
+    flex:1;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+.vehicle-info-stats{
+    margin-top: 30px;
+}
+
+.vehicle-info-desc{
+    width:40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-shrink: 0.9;
+
+}
+
+
+.vehicle-end{
+    height: 20px;
+}
+
+.location-section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.company-section-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rating-section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-end;
+}
+
+.rating-comments{
+    width: 85%;
+    height: 400px;
+    align-items: center;
+    background-color: #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow-x:hidden;
+    overflow-y:auto;
+    margin-right:50px;
+}
+
+.comment-container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height:200px;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+.comment-container label{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.comment-container textarea{
+    border: 0;
+    margin-left: 15px;
+    resize: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-right:20px;
+    margin-bottom: 10px;
+}
+
+.comment-container :nth-child(2){
+    margin-top: 15px;
+}
+
+.comment-container meter{
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.rating-label{
+    display: flex;
+    flex-direction: row;
+}
+
+.average-rating::before {
+    --percent: calc(var(--rating-value)/5*100%);
+    content: '★★★★★';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0,0,0,0.2);
+    background:
+            linear-gradient(90deg, gold var(--percent), rgba(0,0,0,0.2) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.average-rating {
+    position: relative;
+    appearance: none;
+    color: transparent;
+    width: auto;
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: xx-large;
+}
+
+.rating-label{
+    font-size:larger;
+    font-style:italic;
+    padding: 50px;
+    flex: 1;
+}
+
+.rating-label meter{
+    margin-right: 140px;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+

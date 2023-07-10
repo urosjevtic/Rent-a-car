@@ -1,0 +1,263 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.grid-item {
+    width: 97%;
+    height: 250px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.item-image-section {
+    width: 30%;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-info-section {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item:hover > .item-info-section{
+    background-color: lightgrey;
+}
+
+.item-info {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.info-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.info-group label{
+    font-family: Arial, sans-serif;
+}
+
+.info-group #Name{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.info-group #WrkHrs{
+    font-weight: bold
+}
+
+.info-group #Location,#Rating{
+    font-style: italic;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid black; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 45%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.collapsible-search-bar {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.active, .collapsible-search-bar:hover {
+    background-color: #ccc;
+}
+
+
+.content-collapsible-search-bar {
+    padding: 0 18px;
+    background-color: #eee;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.object-search{
+    display: flex;
+    flex-direction: row;
+}
+
+.object-search-params{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+    font-family: Arial, sans-serif;
+}
+
+.object-search-header{
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+
+
+.param-group{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.param-group label{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+}
+
+.param-group input,
+.param-group select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+}
+
+.param-group label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+}
+
+.param-group input:focus,
+.param-group input:not(:placeholder-shown),
+.param-group select:focus,
+.param-group select:not(:placeholder-shown) {
+    outline: none;
+    border-color: #555;
+}
+
+.param-group input:not([type='checkbox']):focus + label,
+.param-group input:not([type='checkbox']):not(:placeholder-shown) + label,
+.param-group select:focus + label,
+.valid-values + label {
+    top: -10px;
+    left: 0;
+    font-size: 12px;
+    color: #555;
+    background-color: #fff;
+    padding: 2px;
+}
+
+.param-group select{
+    width: 108%;
+}
+
+.fix-pos{
+    margin-top: 68px;
+    margin-left: 50px;
+}
+
+.fix-pos2{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.param-group input[type='checkbox']
+{
+    margin-top: 10px;
+    margin-left: -8px;
+}
+
+.param-group input[type='checkbox']:checked + label{
+    color: #555;
+    font-weight: bold;
+}
+
+.search-buttons{
+    flex-grow:1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 28px;
+}
+
+.search-buttons button{
+    height: 13%;
+    margin-bottom: 30px;
+    margin-right: 5px;
+}
+
+.search-clear{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #cc0000;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-apply{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4cc35b;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-clear:hover{
+    background-color: #ff3333;
+}
+
+.search-apply:hover{
+    background-color: #68da23;
+}
+
+

@@ -1,0 +1,47 @@
+#user_profile {
+    width: 500px;
+    height: fit-content;
+    margin: 3% auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+
+}
+
+#user_profile table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#user_profile table td {
+    padding: 25px;
+    border-bottom: 1px solid black;
+}
+
+#user_profile table tr:last-child td {
+    border-bottom: none;
+}
+
+#user_profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#user_profile td:nth-child(1) {
+    font-weight: bold;
+}
+
+#user_profile td:nth-child(3) {
+    cursor: pointer;
+    color: blue;
+}
+
+#user_profile tr#edit_field td {
+    border-bottom: none;
+
+}

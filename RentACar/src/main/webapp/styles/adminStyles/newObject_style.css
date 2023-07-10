@@ -1,0 +1,144 @@
+#new_object {
+    width: fit-content;
+    height: fit-content;
+    margin: 3% auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+
+}
+
+#new_object table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#new_object table td {
+    padding: 25px;
+    border-bottom: none;
+}
+
+#new_object table tr:last-child td {
+    border-bottom: none;
+}
+
+#new_object h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#new_object td:nth-child(1) {
+    font-weight: bold;
+}
+
+#new_object td:nth-child(3) {
+    cursor: pointer;
+    color: blue;
+}
+
+#new_object tr#edit_field td {
+    border-bottom: none;
+
+}
+
+.container-object {
+    width: 800px;
+    height: 700px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-section-object {
+    width: 40%;
+    background-image: url('../../images/building.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.new-object-section {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.object-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input[type="time"]
+{
+    width: 97%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+    text-indent: 20px;
+}
+
+.form-group input[type="file"]
+{
+    width: 97%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+    text-indent: 50px;
+    margin-top: 20px;
+}
+
+.form-group #imgLabel{
+    margin-top:20px;
+}
+
+.form-group #map{
+    height: 200px;
+    width: 97%;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.form-group .loneLabel{
+    position: relative;
+    top: 10px;
+}
+
+.form-group #Name{
+    width: 97%;
+    margin-bottom: 8px;
+}
+
+.container-object input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4cc35b;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container-object input[type="submit"]:hover {
+    background-color: #68da23;
+}
+
+

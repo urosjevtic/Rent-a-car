@@ -1,0 +1,14 @@
+{
+  "1" : {
+    "id" : "1",
+    "canceled" : 6,
+    "firstCancel" : "2023-07-09",
+    "userId" : "2"
+  },
+  "2" : {
+    "id" : "2",
+    "canceled" : 1,
+    "firstCancel" : "2023-07-10",
+    "userId" : "1"
+  }
+}

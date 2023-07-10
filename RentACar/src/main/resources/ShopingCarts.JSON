@@ -1,0 +1,29 @@
+{
+  "1" : {
+    "id" : "1",
+    "rentDateStart" : null,
+    "rentDateEnd" : null,
+    "vehicleIds" : [ ],
+    "userId" : "1",
+    "price" : 0.0,
+    "objectId" : null
+  },
+  "2" : {
+    "id" : "2",
+    "rentDateStart" : null,
+    "rentDateEnd" : null,
+    "vehicleIds" : [ ],
+    "userId" : "2",
+    "price" : 0.0,
+    "objectId" : null
+  },
+  "3" : {
+    "id" : "3",
+    "rentDateStart" : null,
+    "rentDateEnd" : null,
+    "vehicleIds" : [ ],
+    "userId" : "3",
+    "price" : 0.0,
+    "objectId" : null
+  }
+}

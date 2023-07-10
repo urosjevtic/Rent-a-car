@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CustomerScreen</title>
+    <link href="styles/profile_style.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/company_style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/customerStyles/rent_vehicel.css" rel="stylesheet">
+    <link href="styles/orders_style.css" rel="stylesheet">
+    <link href="styles/customerStyles/comment_style.css" rel="stylesheet">
+    <link href="styles/company_info_style.css" rel="stylesheet">
+    <link href="styles/messages.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <link rel="icon"  href="images/favicon.ico">
+</head>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#/">Home</a></li>
+      <li><a href="#/Profile">Profile</a></li>
+      <li><a href="#/RentVehicle">Rent vehicle</a></li>
+        <li><a href="#/AllOrders">My orders</a></li>
+        <li><a href="#/Logout">Logout</a></li>
+    </ul>
+  </nav>
+  <div id="main_container">
+    <router-view></router-view>
+  </div>
+</body>
+<script src="js/axios.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/vue-router.js"></script>
+<script src="app/CompanyComponents/companyObjects.js"></script>
+<script src="app/logoutComponent.js"></script>
+<script src="app/CustomerComponents/addVehicleToCartComponent.js"></script>
+<script src="app/CustomerComponents/shopingCartComponent.js"></script>
+<script src="app/CustomerComponents/rentVehicleComponent.js"></script>
+<script src="app/CustomerComponents/allCustomerOrdersComponent.js"></script>
+<script src="app/CustomerComponents/customerComment.js"></script>
+<script src="app/profileComponent.js"></script>
+<script src="app/CompanyComponents/objectInfo.js"></script>
+<script src="app/CustomerComponents/customerMain.js"></script>
+</html>

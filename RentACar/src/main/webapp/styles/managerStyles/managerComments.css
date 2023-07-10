@@ -1,0 +1,159 @@
+.manager_comments{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.comment_pending{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: fit-content;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.comment_accepted{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: fit-content;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.comment_denied{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: fit-content;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.comment_container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 270px;
+    background: #eee;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.comment_accepted label,
+.comment_denied label,
+.comment_pending label{
+    font-family: Arial, sans-serif;
+    font-size: large;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.comment_container textarea{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+    width:95%;
+    resize: none;
+    margin-left: 5px;
+    height: 100px;
+}
+
+
+.comment_container label{
+    color: #999;
+    margin-top: 15px;
+    font-size: medium;
+    margin-left: 5px;
+}
+
+
+
+.average-rating::before {
+    --percent: calc(var(--rating-value)/5*100%);
+    content: '★★★★★';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0,0,0,0.2);
+    background:
+            linear-gradient(90deg, gold var(--percent), rgba(0,0,0,0.2) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.average-rating {
+    position: relative;
+    appearance: none;
+    color: transparent;
+    width: auto;
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: xx-large;
+}
+
+.rating_n_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttons button{
+    margin-right: 10px;
+    height: 35px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.buttons #Acc{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4cc35b;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buttons #Den{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #cc0000;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buttons #Acc:hover{
+    background-color: #68da23;
+}
+
+.buttons #Den:hover{
+    background-color: #ff3333;
+}

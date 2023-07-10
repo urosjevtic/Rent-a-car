@@ -1,0 +1,231 @@
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrapper h1 {
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.project {
+    display: flex;
+}
+.shop {
+    flex: 75%;
+}
+.box {
+    display: flex;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #fff;
+    transition: all .6s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.box:hover {
+    border: none;
+    transform: scale(1.01);
+}
+.box img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+.content {
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+.content h3 {
+    margin-bottom: 10px;
+}
+.content h4 {
+    margin-bottom: 10px;
+}
+.content ul {
+    padding-left: 20px;
+}
+.information {
+    display: flex;
+}
+
+.list-container {
+    flex: 1;
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: #000;
+    margin: 0 10px;
+}
+
+.text-container {
+    flex: 1;
+}
+.company{
+    display: flex;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+
+.company img{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+.btn-area {
+    bottom: 0px;
+    margin-left: 25%;
+    margin-right: 30%;
+    padding: 10px 25px;
+    background-color: #4cc35b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-area:hover {
+    background-color: #68da23;
+    color: #fff;
+    font-weight: 600;
+}
+.unit input {
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+}
+.btn-area i {
+    margin-right: 5px;
+}
+.right-bar {
+    flex: 25%;
+    margin-left: 20px;
+    padding: 20px;
+    height: 200px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.right-bar hr {
+    margin-bottom: 25px;
+}
+.right-bar p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.right-bar a {
+    background-color: #120a3d;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 900;
+}
+.right-bar i {
+    margin-right: 15px;
+}
+.right-bar a:hover {
+    background-color: #412854;
+}
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: #24943A;
+}
+
+.headers
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.filter_bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.rc{
+    margin-left: 60px;
+}
+.date_picker {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    order: 2;
+    color: white;
+}
+
+.start_date,
+.end_date {
+    display: flex;
+    flex-direction: column;
+    margin-left: -100px;
+    margin-right: -100px;
+}
+
+.filter_button {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+/* custom styles */
+label {
+    display: block;
+}
+input {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 190px;
+}
+
+.btn-area-header {
+    bottom: 0px;
+    margin: 15px;
+    padding: 10px 25px;
+    background-color: #4cc35b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-area-header:hover {
+    background-color: #68da23;
+    color: #fff;
+    font-weight: 600;
+}
+.unit input {
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+}
+.btn-area-header i {
+
+}
